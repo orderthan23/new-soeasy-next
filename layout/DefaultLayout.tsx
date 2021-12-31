@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import layoutStyles from '../styles/layout-styles';
-const { Container, ContentArea } = layoutStyles;
+import Footer from '../components/common/Footer';
+import Header from '../components/common/Header';
+import { DefaultLayoutStyles } from '../styles/layout-styles';
+const { Container, ContentArea } = DefaultLayoutStyles;
 
 type DefaultLayoutProps = {
   children: React.ReactNode;

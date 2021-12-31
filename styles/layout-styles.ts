@@ -36,8 +36,8 @@ const InputSearch = styled.div`
 
   .fa-search {
     position: absolute;
-    right: 0px;
-    top: 13px;
+    right: 16px;
+    top: 10px;
     margin: 0;
   }
 `;
@@ -263,12 +263,16 @@ const ContentArea = styled.section`
   position: relative;
 `;
 
-const layoutStyles = {
-  //Header
+//Header
+export const HeaderStyles = {
   SoEasyHeader,
   InputArea,
   InputSearch,
   SubMenus,
+};
+
+//SideBar
+export const SideBarStyles = {
   ToggleMenu,
   NavWrap,
   ProfileZone,
@@ -278,15 +282,17 @@ const layoutStyles = {
   SubNav,
   MainNav,
   MegaMenu,
+};
 
-  //Footer
+//Footer
+export const FooterStyles = {
   SoEasyFooter,
   FooterWrap,
   FooterText,
+};
 
-  //DefaultLayout
+//DefaultLayout
+export const DefaultLayoutStyles = {
   Container,
   ContentArea,
 };
-
-export default layoutStyles;

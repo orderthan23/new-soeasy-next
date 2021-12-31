@@ -1,7 +1,7 @@
 import React from 'react';
 
-import layoutStyles from '../styles/layout-styles';
-const { SoEasyFooter, FooterWrap, FooterText } = layoutStyles;
+import { FooterStyles } from '../../styles/layout-styles';
+const { SoEasyFooter, FooterWrap, FooterText } = FooterStyles;
 const Footer = () => {
   return (
     <SoEasyFooter>
