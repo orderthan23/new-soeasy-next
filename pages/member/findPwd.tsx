@@ -2,9 +2,9 @@ import Link from 'next/link';
 import React from 'react';
 
 import FindMenu from '../../components/member/FindMenu';
-import { FindStyle } from '../../styles/member-styles';
+import { FindStyles } from '../../styles/member-styles';
 
-const { FormArea, LogoTitle, FindBtn, FindBox, FindTab } = FindStyle;
+const { FormArea, LogoTitle, FindBtn, FindBox, FindTab } = FindStyles;
 const FindPwd = () => {
   return (
     <>
