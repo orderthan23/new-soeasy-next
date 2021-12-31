@@ -3,13 +3,10 @@ import reset from 'styled-reset';
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
   ${reset}
   * {
     box-sizing: border-box;
-  }
-
-  body {
-    font-family: 'nanumsquare', sans-serif;
   }
 
   a {
@@ -38,6 +35,23 @@ const GlobalStyle = createGlobalStyle`
       font-size: 10px;
     }
   }
+
+  p, a, h1, h2, h3, h4, h5, h6 {
+    transform: skew(-0.1deg);
+  }
+
+  a:hover {
+    color: #3DB6AE;
+    font-weight: bold;
+  }
+
+  body {
+    margin: 0;
+    height: 100%;
+    padding-top: 70px;
+    font-family: 'nanumsquare';
+  }
+
 `;
 
 export default GlobalStyle;
