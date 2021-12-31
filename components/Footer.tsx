@@ -1,32 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
 
-const SoEasyFooter = styled.footer`
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #c4c4c4;
-  text-align: center;
-`;
-
-const FooterWrap = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100px;
-`;
-
-const FooterText = styled.div`
-  font-size: 12px;
-  text-align: left;
-`;
-
+import layoutStyles from '../styles/layout-styles';
+const { SoEasyFooter, FooterWrap, FooterText } = layoutStyles;
 const Footer = () => {
   return (
     <SoEasyFooter>

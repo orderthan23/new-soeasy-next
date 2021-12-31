@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'nanumsquare', sans-serif;
   }
 
   @media only screen and (max-width: 768px) {
@@ -36,6 +36,7 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  //한국어 폰트 깨짐 방지
   p, a, h1, h2, h3, h4, h5, h6 {
     transform: skew(-0.1deg);
   }
