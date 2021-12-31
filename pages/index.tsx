@@ -1,5 +1,9 @@
 import type { NextPage } from 'next';
 
+import Slider, {
+  SliderImageProps,
+  SliderSettingProps,
+} from '../components/common/Slider';
 import mainStyle from '../styles/mainpage-styles';
 
 const {
@@ -12,11 +16,36 @@ const {
   SpaceName,
   SpacePrice,
 } = mainStyle;
+
+const slideSeting: SliderSettingProps = {
+  className: 'banner',
+  spaceBetween: 0,
+  slidesPerView: 1,
+  navigation: true,
+  pagination: { clickable: true },
+  autoplay: { delay: 5000 },
+};
+
+const imageList: SliderImageProps[] = [
+  {
+    url: '/images/space1-1.jpg',
+    name: '이미지1',
+  },
+  {
+    url: '/images/space1-2.jpg',
+    name: '이미지2',
+  },
+  {
+    url: '/images/space1-3.jpg',
+    name: '이미지3',
+  },
+];
+
 const Home: NextPage = () => {
   return (
     <>
       <BannerArea>
-        <img src="/images/banner.png" height="300px" width="100%" />
+        <Slider setting={slideSeting} imageList={imageList} />
       </BannerArea>
       <QuickSearch>
         <ThemeListWrap>

@@ -10,37 +10,62 @@ const Join = () => {
         <h1>회원 가입</h1>
         <JoinForm>
           <label>아이디</label>
-          <input type="text" placeholder="아이디를 입력해주세요." />
+          <input
+            type="text"
+            placeholder="아이디를 입력해주세요."
+            maxLength={15}
+          />
           <button>중복 확인</button>
         </JoinForm>
         <JoinForm>
           <label>닉네임</label>
-          <input type="text" placeholder="닉네임을 입력해주세요." />
+          <input
+            type="text"
+            placeholder="닉네임을 입력해주세요."
+            maxLength={10}
+          />
           <button>중복 확인</button>
         </JoinForm>
         <JoinForm>
           <label>이름</label>
-          <input type="text" placeholder="이름을 입력해주세요." />
+          <input
+            type="text"
+            placeholder="이름을 입력해주세요."
+            maxLength={20}
+          />
         </JoinForm>
         <JoinForm>
           <label>비밀번호</label>
-          <input type="password" placeholder="비밀번호를 입력해주세요." />
+          <input
+            type="password"
+            placeholder="비밀번호를 입력해주세요."
+            maxLength={20}
+          />
         </JoinForm>
         <JoinForm>
           <label>비밀번호 확인</label>
           <input
             type="password"
             placeholder="비밀번호를 한번 더  입력해주세요."
+            maxLength={20}
           />
         </JoinForm>
         <JoinForm>
           <label>연락처</label>
-          <input type="tel" placeholder="연락처를 입력해주세요." />
+          <input
+            type="tel"
+            placeholder="연락처를 입력해주세요."
+            maxLength={11}
+          />
           <button>본인 인증</button>
         </JoinForm>
         <JoinForm>
           <label>이메일</label>
-          <input type="email" placeholder="이메일을 입력해주세요." />
+          <input
+            type="email"
+            placeholder="이메일을 입력해주세요."
+            maxLength={40}
+          />
         </JoinForm>
         <Agreement>
           <input type="checkbox" />

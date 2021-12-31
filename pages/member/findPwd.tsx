@@ -26,11 +26,19 @@ const FindPwd = () => {
             <h3>비밀번호는 가입하신 아이디와 이메일로 찾을 수 있습니다.</h3>
             <div className="form-control">
               <label>아이디</label>
-              <input type="text" placeholder="아이디를 입력해주세요." />
+              <input
+                type="text"
+                placeholder="아이디를 입력해주세요."
+                maxLength={20}
+              />
             </div>
             <div className="form-control">
               <label>이메일</label>
-              <input type="email" placeholder="이메일을 입력해주세요." />
+              <input
+                type="email"
+                placeholder="이메일을 입력해주세요."
+                maxLength={40}
+              />
             </div>
             <FindMenu />
             <FindBtn>찾기</FindBtn>

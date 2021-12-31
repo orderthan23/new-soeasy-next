@@ -17,11 +17,19 @@ const Login = () => {
           <FormArea>
             <div className="form-control">
               <label>아이디</label>
-              <input type="text" placeholder="아이디를 입력해주세요." />
+              <input
+                type="text"
+                placeholder="아이디를 입력해주세요."
+                maxLength={15}
+              />
             </div>
             <div className="form-control">
               <label>비밀번호</label>
-              <input type="password" placeholder="비밀번호를 입력해주세요." />
+              <input
+                type="password"
+                placeholder="비밀번호를 입력해주세요."
+                maxLength={20}
+              />
             </div>
             <FindMenu />
             <LoginBtn>로그인</LoginBtn>

@@ -26,11 +26,19 @@ const FindId = () => {
             <h3>아이디는 가입하신 이름과 이메일로 찾을 수 있습니다.</h3>
             <div className="form-control">
               <label>이름</label>
-              <input type="text" placeholder="이름을 입력해주세요." />
+              <input
+                type="text"
+                placeholder="이름을 입력해주세요."
+                maxLength={15}
+              />
             </div>
             <div className="form-control">
               <label>이메일</label>
-              <input type="email" placeholder="이메일을 입력해주세요." />
+              <input
+                type="email"
+                placeholder="이메일을 입력해주세요."
+                maxLength={40}
+              />
             </div>
             <FindMenu />
             <FindBtn>찾기</FindBtn>
